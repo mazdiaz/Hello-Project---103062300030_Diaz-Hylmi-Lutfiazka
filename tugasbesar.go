@@ -3,9 +3,9 @@ package main
 
 import (
 	"bufio"
+	"encoding/json"
 	"fmt"
 	"os"
-	"encoding/json"
 )
 
 type Nilai struct {
@@ -36,6 +36,8 @@ func printAsciiArt() {
 	`
 	fmt.Println(asciiArt)
 }
+
+//sdsd d
 
 func menu() {
 	printAsciiArt()
@@ -244,7 +246,7 @@ func editData(students []Mahasiswa) {
 
 				students[i].matakuliah[subjectIndex].grades.total = (students[i].matakuliah[subjectIndex].grades.uts + students[i].matakuliah[subjectIndex].grades.uas + students[i].matakuliah[subjectIndex].grades.quiz) / 3
 				students[i].matakuliah[subjectIndex].grades.grade = calculateGrade(students[i].matakuliah[subjectIndex].grades.total)
-				
+
 				fmt.Println("Data mata kuliah telah diubah.")
 				totalNilai := 0.0
 				for _, matkul := range students[i].matakuliah {
