@@ -1,4 +1,4 @@
-// ini adalah bari komentar baru
+// ini adalah baris komentar baru
 package main
 
 import (
